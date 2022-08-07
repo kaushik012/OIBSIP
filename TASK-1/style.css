@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(226,188,14,1) 40%, rgba(45,44,46,1) 100%);
+}
+.calculator {
+    display: flex;
+    flex-direction: column;
+}
+.display {
+    height: auto;
+    width:  300px;
+    border-color: transparent;
+    background-color: black;
+    outline: none;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    color: #fff;
+    text-align: right;
+    font-size: 2.7rem;
+    padding-top: 10rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px;
+    border-top: 2px solid #262626;
+}
+.grid button {
+    height: 5rem;
+    border: none;
+    border-color: transparent;
+    position: relative;
+}
+.backspace i{
+    font-size: 2.2rem;
+}
+.zero {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-bottom-left-radius: 25px;
+}
+.equal {
+    border-bottom-right-radius: 25px;
+    background: #E5BF0F;
+    font-size: 2rem;
+}
+.white {
+    color: white;
+}
+.yellow {
+    color: #E5BF0F;
+}
+
+.division,.mul,.sub,.add {
+    font-size: 2rem;
+    background: black;
+}
+.ac,.percent,.seven,.eight,.nine,.four,.five,.six,.one,.two,.three,.dot,.zero,.backspace {
+    font-size: 1.5rem;
+    background: black;
+}
+button:hover {
+    background: #1A1A1A;
+}
+.hover:hover {
+    background: #1A1A1A;
+    color: #E5BF0F;
+}
+.mul {
+    font-size: 1.7rem;
+}
