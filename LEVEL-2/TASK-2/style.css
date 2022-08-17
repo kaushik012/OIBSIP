@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #000;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(184, 184, 184);
+    border-radius: 5px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.main {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: #000;
+}
+.image{
+    height: 700px;
+    width: 520px;
+    position: absolute;
+    right: 3%;
+}
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    opacity: 0;
+    animation: reveal 1.5s ease-in-out forwards;
+}
+@keyframes reveal {
+    to {
+        opacity: 1
+    }
+}
+h1 {
+    font-family: 'Kaushan Script', cursive;
+    color: rgb(184, 184, 184);
+    font-size: 3rem;
+    text-align: right;
+    opacity: 0;
+    animation: reveal 1s ease-in-out forwards;
+    animation-delay: 1.5s;
+}
+h5 {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(184, 184, 184);
+    float: right;
+    font-size: 1.3em;
+    opacity: 0;
+    animation: reveal 1s ease-in-out forwards;
+    animation-delay: 2.5s;
+}
+.quote {
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 33%;
+    transform: translate(-50%,-50%);
+}
+.description {
+    background: rgb(184, 184, 184);
+    height: auto;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.desc {
+    width: 70%;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.des1,.des2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 2.1rem;
+    text-align: center;
+}
+p {
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.3em;
+    font-weight: 400 
+}
+.quote2 {
+    width: 100%;
+    background: black;
+    color: rgb(184, 184, 184);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+.desc-quote {
+    width: 85%;
+    text-align: center;
+    margin: 30px;
+    font-family: 'Shadows Into Light', cursive,;
+}
+.alignright {
+    float: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 1.7em;
+}
+.quote-2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 1.7em;
+}
+.tribute {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: rgb(184, 184, 184);
+}
+.tribute-desc {
+    width: 50%;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.tribute-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+span {
+    font-weight: bold;
+}
+.timeline__p {
+    word-spacing: auto;
+}
+footer {
+    width: 100%;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
